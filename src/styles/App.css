@@ -89,6 +89,19 @@
   font-weight: bold;
 }
 
+.notif-text {
+  color: white;
+  font-size: 16px;
+}
+
+.border {
+  border: 1px solid white;
+  padding: 10px;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* KeyFrames */
 @-webkit-keyframes gradient-animation {
   0% {
@@ -121,5 +134,30 @@
   }
   100% {
     background-position: 0% 50%;
+  }
+}
+
+# spinner
+.pad-bottom {
+  padding-bottom: 20px;
+}
+
+.loader {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #3498db;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  animation: spin 1s linear infinite;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
